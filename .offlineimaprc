@@ -1,0 +1,25 @@
+[general]
+ui 			= blinkenlights
+accounts 		= AndreiKrasnoshchekov
+fsync 			= false
+maxsyncaccounts		= 1
+
+[Account AndreiKrasnoshchekov]
+localrepository 	= AndreiKrasnoshchekov-Local
+remoterepository 	= AndreiKrasnoshchekov-Remote
+
+[Repository AndreiKrasnoshchekov-Local]
+type 			= GmailMaildir
+localfolders 		= ~/.mail/andrei-andreikrasnoshchekov.com
+
+[Repository AndreiKrasnoshchekov-Remote]
+maxconnections 		= 1
+type 			= Gmail
+realdelete		= no
+remoteport 		= 993
+remoteuser 		= a.krasnoshchekov1992@gmail.com
+remotepass		= mtqguhjpvfxqfyey
+remotehost 		= imap.gmail.com
+ssl 			= yes
+ssl_version 		= tls1_2
+sslcacertfile 		= /etc/ssl/certs/ca-certificates.crt
